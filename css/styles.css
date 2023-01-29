@@ -1,0 +1,151 @@
+:root{
+    --primary-text-color:#434455;
+    --title-text-color: #2E2F42;
+    --accent-color: #4D5AE5;
+    --portfolio-button-bg-color:#F4F4FD;
+    --portfolio-button-bg-accent-color:#404BBF;
+    --main-bg-color:#ffffff;
+    --footer-text: #E7E9FC
+}
+
+body{
+    background-color:var(--main-bg-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.list{
+    list-style: none;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+.logo-first-part{
+    color: var(--accent-color);  
+}
+.logo-second-part-header{
+    color: var(--title-text-color);
+}
+.logo-second-part-footer{
+    color: var(--portfolio-button-bg-color);
+}
+
+
+.caption,
+.link{
+    color:var(--title-text-color)
+}
+
+.header-site-navigation-link:hover,
+.header-address-navigation-link:hover,
+.logo:hover,
+.button:hover,
+.header-site-navigation-link:focus,
+.header-address-navigation-link:focus,
+.logo:focus,
+.button:focus{
+    color: var(--accent-color);
+}
+
+.button{
+    background-color: var(--accent-color);
+    color: var(--main-bg-color);
+    font-family: inherit;
+    font-weight: 500;
+    align-items: center;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+.portfolio-button {
+    background-color: var(--portfolio-button-bg-color);
+    color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background-color: var(--portfolio-button-bg-accent-color);
+    color: var(--main-bg-color);
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+.link,
+.button,
+.logo,
+.portfolio-button {
+    text-decoration: none;
+}
+
+.header-site-navigation-item {
+    font-weight: 500;
+}
+
+.header-address-navigation-item {
+    font-style: normal;
+}
+
+.hero,
+.footer{
+    background-color: var(--title-text-color);
+}
+.hero-title{
+    color: var(--main-bg-color);
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+}
+
+.skills-item-title,
+.portfolio-item-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.examples-title,
+.team-title{
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.team{
+    background-color: var(--portfolio-button-bg-color);
+}
+
+.footer-text{
+    color: var(--footer-text);
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
