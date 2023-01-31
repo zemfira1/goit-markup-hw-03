@@ -21,7 +21,6 @@
 }
 
 body{
-    margin: 0;
     background-color:var(--main-bg-color);
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
@@ -31,10 +30,24 @@ body{
     letter-spacing: 0.02em;
 }
  
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
 .list{
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .logo {
@@ -138,7 +151,6 @@ body{
     text-align: center;
 }
 .hero-title{
-    margin-top: 0 ;
     margin-bottom: 48;
     color: var(--main-bg-color);
     font-size: 56px;
@@ -150,23 +162,16 @@ body{
     padding-bottom: 120px;
 }
 .skills-item-title{
-    margin-top: 0;
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
 }
-.skills-item-text{
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 
 .examples{
     padding-bottom: 120px;
 }
 .examples-title{
-    margin-top: 0;
     margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
@@ -185,7 +190,6 @@ body{
     background-color: var(--portfolio-button-bg-color);
 }
 .team-title{
-    margin-top: 0px;
     margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
@@ -198,12 +202,7 @@ body{
     margin-bottom: 32px;
 }
 .team-item-name{
-    margin-top: 0;
     margin-bottom: 8px;
-}
-.team-item-speciality{
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .footer {
@@ -213,7 +212,6 @@ body{
 }
 .footer-text{
     margin-top: 16;
-    margin-bottom: 0px;
     color: var(--footer-text);
 }
 
@@ -235,7 +233,6 @@ body{
     margin-bottom: 48px;
 }
 .portfolio-item-title {
-    margin-top: 0;
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
@@ -248,7 +245,6 @@ body{
     margin-bottom: 32px;
 }
 .portfolio-item-area{
-    margin-top: 0;
     margin-bottom: 32px;
 }
 
