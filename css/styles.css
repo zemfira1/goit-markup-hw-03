@@ -42,7 +42,14 @@ h6 {
 
 ul {
     margin: 0;
-    padding-left: 0;
+    padding: 0;
+}
+img{
+    display: block;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
 }
 
 .list{
@@ -51,6 +58,9 @@ ul {
 }
 
 .logo {
+    display: block;
+    padding: 24px 0;
+    margin-right: 76px;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -83,6 +93,8 @@ ul {
     color: var(--accent-color);
 }
 
+
+        /*настройки кнопок*/
 .button{
     display: inline-block;
     border-radius: 4px;
@@ -102,7 +114,6 @@ ul {
     border-radius: 4px;
     padding: 12px 24px;
     border: 1px solid var(--footer-text);
-
     background-color: var(--portfolio-button-bg-color);
     color: var(--accent-color);
     font-family: inherit;
@@ -133,17 +144,46 @@ ul {
     text-decoration: none;
 }
 
+
+        /*header*/
+.nav-main{
+    display: flex;
+    justify-content: space-around;
+}
+.nav{
+    display: flex;
+}
+.header-site-navigation-list{
+    display: flex;
+}
 .header-site-navigation-item {
     font-weight: 500;
+}
+.header-site-navigation-item:not(:last-child){
+    margin-right: 40px;
+}
+.header-site-navigation-link{
+    display: block;
+    padding: 24px 0;
+}
+
+.header-address-navigation-list{
+    display: flex;
+}
+.header-address-navigation-item:not(:last-child) {
+    margin-right: 40px;
 }
 .header-address-navigation-item {
     font-style: normal;
 }
-.header{
-    padding-top: 24px;
-    padding-bottom: 24px;
+.header-address-navigation-link{
+    display: block;
+    padding: 24px 0;
 }
 
+
+
+        /*hero*/
 .hero{
     padding-top: 188px;
     padding-bottom: 188px;
@@ -151,15 +191,28 @@ ul {
     text-align: center;
 }
 .hero-title{
-    margin-bottom: 48;
+    max-width: 494px;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
     color: var(--main-bg-color);
     font-size: 56px;
     line-height: 1.07;
 }
 
+
+        /*skills*/
 .skills {
     padding-top: 120px;
     padding-bottom: 120px;
+}
+.skills-list{
+    display: flex;
+}
+.skills-item:not(:last-child){
+    margin-right: 24px;
 }
 .skills-item-title{
     margin-bottom: 8px;
@@ -168,8 +221,14 @@ ul {
     line-height: 1.2;
 }
 
+
+        /*examples*/
 .examples{
     padding-bottom: 120px;
+}
+.examples-list{
+    display: flex;
+    justify-content: space-between;
 }
 .examples-title{
     margin-bottom: 72px;
@@ -178,12 +237,9 @@ ul {
     text-align: center;
     text-transform: capitalize;
 }
-.examples-photo{
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
 
+        /*team*/
 .team {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -196,15 +252,33 @@ ul {
     text-align: center;
     text-transform: capitalize;
 }
-
-.team-photo{
-    margin-top: 0;
-    margin-bottom: 32px;
+.team-list{
+    display: flex;
+    justify-content: space-between;
+}
+.team-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    background-color: var(--main-bg-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 32px 16px;
 }
 .team-item-name{
     margin-bottom: 8px;
 }
 
+
+        /*footer*/
 .footer {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -215,6 +289,8 @@ ul {
     color: var(--footer-text);
 }
 
+
+        /*настройки контейнера*/
 .container {
     width: 1158px;    /*1128+15*2*/
     padding-left: 15px;
@@ -224,29 +300,49 @@ ul {
     border: 1px solid tomato;
 }
 
-.portfolio{
+
+        /*portfolio*/
+.portfolio {
     padding-top: 96px;
     padding-bottom: 120px;
 }
+.portfolio-navigation-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+.portfolio-navigation-item:not(:last-child) {
+    margin-right: 24px;
+}
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    row-gap: 48px;
+    column-gap: 24px;
+       
+}
 .portfolio-item{
-    margin-top: 0;
-    margin-bottom: 48px;
+    width: calc((100%-48px)/3);
+    padding-bottom: 32px; 
+    background: var(--main-bg-color);
+    border: 1px solid var(--footer-text-portfolio-button-border);
 }
 .portfolio-item-title {
     margin-bottom: 8px;
+    margin-left: 16px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
 }
-.portfolio-navigation-list{
-    margin-bottom: 72px;
-}
 .portfolio-item-photo{
+
     margin-bottom: 32px;
 }
 .portfolio-item-area{
-    margin-bottom: 32px;
+    margin-left: 16px;
 }
+
 
 .hidden {
     position: absolute;
