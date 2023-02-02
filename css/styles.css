@@ -59,9 +59,12 @@ img{
     padding-right: 15px;
     margin: 0 auto;
 
-    /*outline: 1px solid tomato;*/
+    outline: 1px solid tomato;
 }
-
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .list{
     list-style: none;
     padding: 0;
@@ -106,10 +109,12 @@ img{
 
         /*настройки кнопок*/
 .button{
+    min-width: 169px;
+    height: 56px;
     display: inline-block;
     border-radius: 4px;
     border: 1px solid var(--accent-color);
-    padding: 16px 32px;
+    /*padding: 16px 32px;*/
 
     background-color: var(--accent-color);
     color: var(--main-bg-color);
@@ -157,6 +162,8 @@ img{
 
         /*header*/
 .header{
+    padding-top: 0;
+    padding-bottom: 0;
     border-bottom: 1px solid var(--footer-text-portfolio-button-border);
 }               
 .nav-main{
@@ -217,10 +224,6 @@ img{
 
 
         /*skills*/
-.skills {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
 .skills-list{
     display: flex;
 }
@@ -237,7 +240,7 @@ img{
 
         /*examples*/
 .examples{
-    padding-bottom: 120px;
+    padding-top: 0;
 }
 .examples-list{
     display: flex;
@@ -256,8 +259,6 @@ img{
 
         /*team*/
 .team {
-    padding-top: 120px;
-    padding-bottom: 120px;
     background-color: var(--portfolio-button-bg-color);
 }
 .team-title{
@@ -318,7 +319,6 @@ img{
         /*portfolio*/
 .portfolio {
     padding-top: 96px;
-    padding-bottom: 120px;
 }
 .portfolio-navigation-list {
     display: flex;
